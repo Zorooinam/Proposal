@@ -207,3 +207,56 @@
   
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Element on Scroll</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* To enable scrolling */
+    }
+
+    /* Fixed element styling */
+    .fixed-element {
+      position: fixed; /* Fixes the element in place */
+      top: 20px;        /* Distance from the top of the screen */
+      right: 20px;      /* Distance from the right side */
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .fixed-element:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Welcome to My Page!</h1>
+    <p>Scroll down to see the fixed element staying in place.</p>
+    <p>Continue scrolling...</p>
+    <!-- More content to make the page scrollable -->
+  </div>
+
+  <!-- Fixed element (button) -->
+  <a href="#top" class="fixed-element">Go to Top</a>
+
+</body>
+</html>
